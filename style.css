@@ -11,15 +11,14 @@ body {
 
 h1 { color: white; font-family: 'Helvetica Neue', sans-serif; font-size: 175px; font-weight: bold; letter-spacing: 10px; text-align: center; }
 
-
 h2 { color: #ffffff; font-family: "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 20px; font-weight: lighter;}
 
 h3 { color: #ffffff; font-family: sans-serif; font-size: 40px; font-weight: 400;}
 
-h4 { color: #ffffff; font-family: "Open Sans", "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 16px; font-weight:100; text-align: justify;}
+h4 { color: #ffffff; font-family: "Open Sans", "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 18px; font-weight:100; text-align: justify;}
 
 
-p,tr,td { color: #ffffff; font-family: "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 20px; line-height: 24px;}
+p,tr,td { color: #ffffff; font-family: "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 18px; line-height: 24px; font-weight:100;}
 
 a {
     text-decoration: none;
@@ -117,6 +116,8 @@ a {
 
 #table-upcoming #header {
     border-bottom: 3px solid white;
+    font-size: 20px;
+    font-weight: 400;
     /* box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 2em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
     border-radius: 12px; */
     /* border-bottom: 5px solid transparent; */
@@ -161,9 +162,9 @@ a {
 } */
 
 .accordion {
-    /* box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 1em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
+    box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 1em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
     cursor: pointer;
-    border-radius: 12px; */
+    border-radius: 12px;
     /* transition: box-shadow 0.26s ease; */
     height: 100px;
 }
