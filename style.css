@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+h1 { color: white; font-family: 'Helvetica Neue', sans-serif; font-size: 175px; font-weight: bold; letter-spacing: 10px; text-align: center; }
+
+
+h2 { color: #ffffff; font-family: "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 20px; font-weight: lighter;}
+
+h3 { color: #ffffff; font-family: "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 40px; font-weight: lighter;}
+
+h4 { color: #ffffff; font-family: "Open Sans", "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 16px; font-weight:100; text-align: justify;}
+
+
+p,tr,td { color: #ffffff; font-family: "helvetica", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 20px; line-height: 24px;}
+
+a {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: white;
+}
+
+#container {
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+        radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+        /* radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%), */
+        radial-gradient(ellipse at 100% 100%, #35234b 0%, transparent 70%),
+        radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+    background-blend-mode:screen;
+    /* padding-top: 30px; */
+    padding-bottom: 100px;
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+#nav-bar {
+    width: 80vw;
+    height: 80px;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+    box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 2em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
+    /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
+}
+
+#bold-text {
+    width: 80vw;
+    line-height: 500px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    color: hsla(0, 0%, 100%, 0.85);
+    margin-top: -50px;
+}
+
+#bold-text h1,h2 {
+    line-height: 1.5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -320px;
+}
+
+#bold-text h2 {
+    margin-top: -1140px
+}
+
+#iitlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    width: 64px;
+    height: auto;
+}
+
+#sub-container {
+    margin: auto;
+    width: 80vw;
+    /* min-height: 500px; */
+    background-color: transparent;
+    padding: 60px 50px;
+    border-radius: 6px;
+    color: white;
+    text-align: left;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+    box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 1em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
+    /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
+    padding-bottom: 100px;
+}
+
+#table-upcoming {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    /* padding-left: 20px; */
+    margin-top: 40px;
+    border-collapse: collapse;
+    padding: 0px 20px;
+}
+
+#table-upcoming #header {
+    border-bottom: 3px solid white;
+    /* box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 2em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
+    border-radius: 12px; */
+    /* border-bottom: 5px solid transparent; */
+}
+
+#table-upcoming td,th {
+    padding-top: 20px;
+    padding-left: 25px;
+    min-width: 120px;
+    padding-bottom: 5px;
+}
+
+#table-upcoming td {
+    padding-bottom: 20px;
+}
+
+#table-upcoming td:last-child,th:last-child {
+    padding-right: 40px;
+}
+
+#table-upcoming td:first-child,th:first-child {
+    padding-left: 40px;
+}
+
+.panel {
+    text-align: justify;
+    overflow: hidden;
+    transition: height 0.26s ease;
+}
+
+.panel td,p {
+    height: 0px;
+    /* transform-origin: top; */
+    overflow: hidden;
+    transition: height 0.26s ease;
+}
+
+.accordion:active {
+    box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 0em, rgba(23, 26, 32, 0.05) 0px 0.25em 0.5em;
+    transition: box-shadow 0.26s ease;
+    cursor: pointer;
+}
+
+.accordion {
+    box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 1em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: box-shadow 0.26s ease;
+    height: 100px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <?php header('Access-Control-Allow-Origin: *'); ?>
+    <title>Center of AI Paper Reading Sessions</title>
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 100;
+            src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+        }
+    </style>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $("#accordion").accordion({
+        collapsible: true
+        });
+    } );
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- <div id="nav-bar"></div> -->
+        <div id="bold-text">
+            <img id="iitlogo" src="iitlogo.png" alt="IIT Logo">
+            <h1>CAIPRS</h1><br>
+            <!-- <div id="iitlogo"></div> -->
+            <h2><strong>C</strong>entre of <strong>AI</strong> <strong>P</strong>aper <strong>R</strong>eading <strong>S</strong>essions</h2>
+        </div>
+        <div id="sub-container">
+            <p>
+                <h3>Coming Up</h3>
+                <h4 style="margin-left:2px">Click on each topic to read the abstract</h4>
+            </p>
+            <table id="table-upcoming" cellspacing="20px">
+                <tr id="header">
+                    <th>Data</th>
+                    <th>Presenter</th>
+                    <!-- <th>Topic</th> -->
+                    <th style="text-align: center">Topic</th>
+                </tr>
+                <tr class="spacer" style="height:10px;"></tr>
+
+                <tr class="accordion">
+                    <td>08-02-2024</td>
+                    <td>Tejas Pote</td>
+                    <td>Sparsity in Deep Neural Networks and the Lottery Ticket Hypothesis (<a href="https://arxiv.org/abs/1803.03635">paper</a>,&nbsp;<a href="https://arxiv.org/abs/1903.01611v1">paper</a>,&nbsp;<a href="https://arxiv.org/abs/2010.03533">paper</a>)&nbsp;</td>
+                </tr>
+                <tr class="panel">
+                    <td colspan="4">
+                        <p style="font-size:18px;">
+                            <strong>Abstract:</strong> Deep Neural Networks deliver the promise of overwhelming generalization performance over a wide variety of tasks like image classification, language modeling, etc. However, the growing size of the networks poses concerns of increasing computational and storage overheads. Besides, parameter redundancy in modern deep networks is well established given  their overparameterized nature. To this end, a number of pruning techniques are widely employed for training neural networks which drop redundant model parameters based on various criteria and deliver comparable model performance. In this talk, we discuss the Lottery Ticket Hypothesis, which empirically proves the existence of subnetworks (winning tickets) within dense, randomly-initialized, feed-forward networks and outlines a training procedure to arrive at the winning solution by training from scratch. The method is successful in reducing parameter counts by over 90% and as well converging faster than the dense network. The talk shall revolve around an overview of the method along with the experimental details. We also plan to discuss the theoretical aspects of the technique and develop deeper insights on 'what makes the lottery tickets win'.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="accordion">
+                    <td>15-02-2024</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                </tr>
+                <tr class="panel">
+                    <td colspan="4">
+                        <p style="font-size:18px;">
+                            <strong>Abstract:</strong> TBA.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="accordion">
+                    <td>22-02-2024</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                </tr>
+                <tr class="panel">
+                    <td colspan="4">
+                        <p style="font-size:18px;">
+                            <strong>Abstract:</strong> TBA.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="accordion">
+                    <td>29-02-2024</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                </tr>
+                <tr class="panel">
+                    <td colspan="4">
+                        <p style="font-size:18px;">
+                            <strong>Abstract:</strong> TBA.
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+
+            <p style="margin-top:60px">
+                <h3 style="margin-bottom: 30px">About Us</h3>
+                <h4 style="color:white">Welcome to the Centre of AI Paper Reading Sessions (CAIPRS), an engaging paper reading group hosted at the <strong>COEAI Seminar Room, Takshashila, IIT Kharagpur</strong>. Our mission is straightforward: every <strong>Thursday 04:00-05:00PM IST</strong>, we delve into a new paper presented by a knowledgeable speaker (including their own work), generously dedicating an hour to share insights and discoveries with our members. </h4>
+            </p>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var panels = document.getElementsByClassName("panel");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = panels[[].indexOf.call(acc, this)];
+                console.log(panel.getElementsByTagName("td")[0].style.height);
+                if (!panel.getElementsByTagName("td")[0].style.height || panel.getElementsByTagName("td")[0].style.height.localeCompare("0px")==0) {
+                    panel.getElementsByTagName("td")[0].style.height = "auto";
+                    panel.getElementsByTagName("td")[0].getElementsByTagName("p")[0].style.height = "auto";
+                }
+                else {
+                    panel.getElementsByTagName("td")[0].style.height = "0px";
+                    panel.getElementsByTagName("td")[0].getElementsByTagName("p")[0].style.height = "0px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
