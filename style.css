@@ -105,7 +105,7 @@ a {
 }
 
 #table-upcoming {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: left;
     /* padding-left: 20px; */
@@ -146,6 +146,8 @@ a {
     text-align: justify;
     overflow: hidden;
     transition: height 0.26s ease;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 .panel td,p {
@@ -155,16 +157,18 @@ a {
     transition: height 0.26s ease;
 }
 
-/* .accordion:active {
+.accordion:active {
     box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 0em, rgba(23, 26, 32, 0.05) 0px 0.25em 0.5em;
     transition: box-shadow 0.26s ease;
     cursor: pointer;
-} */
+}
 
 .accordion {
     box-shadow: rgba(16, 17, 20, 0.25) 0px 0px 1em, rgba(23, 26, 32, 0.05) 0px 0.25em 2em;
     cursor: pointer;
     border-radius: 12px;
     /* transition: box-shadow 0.26s ease; */
-    height: 100px;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 400;
 }
