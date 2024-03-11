@@ -48,19 +48,6 @@
                 <tr class="spacer" style="height:10px;"></tr>
 
                 <tr class="accordion">
-                    <td>08-03-2024</td>
-                    <td>Animesh Sachan</td>
-                    <td>An Introduction to Graph Machine Learning - I</td>
-                </tr>
-                <tr class="panel">
-                    <td colspan="4">
-                        <p>
-                            <strong>Abstract:</strong> Deep learning has revolutionized many machine learning tasks in recent years. Traditional machine learning models predominantly handle data in Euclidean spaces, but the surge in complex, interconnected data types necessitates a paradigm shift towards non-Euclidean domains. This is where graph machine learning emerges as a pivotal innovation, providing robust frameworks for analyzing and interpreting data that inherently exists in the form of graphs or networks. Graph learning proves effective for many tasks, such as classification, link prediction, and matching. Generally, graph learning methods extract relevant features of graphs by taking advantage of machine learning algorithms. This talk aims to demystify the prominent architectures within graph machine learning, its wide-ranging applications, and the methodologies for employing Graph Neural Networks (GNNs) to address specific problems.
-                        </p>
-                    </td>
-                </tr>
-
-                <tr class="accordion">
                     <td>15-03-2024</td>
                     <td>Animesh Sachan</td>
                     <td>An Introduction to Graph Machine Learning - II</td>
@@ -68,7 +55,7 @@
                 <tr class="panel">
                     <td colspan="4">
                         <p>
-                            <strong>Abstract:</strong> TBA.
+                            <strong>Abstract:</strong> Deep learning has revolutionized many machine learning tasks in recent years. Traditional machine learning models predominantly handle data in Euclidean spaces, but the surge in complex, interconnected data types necessitates a paradigm shift towards non-Euclidean domains. This is where graph machine learning emerges as a pivotal innovation, providing robust frameworks for analyzing and interpreting data that inherently exists in the form of graphs or networks. Graph learning proves effective for many tasks, such as classification, link prediction, and matching. Generally, graph learning methods extract relevant features of graphs by taking advantage of machine learning algorithms. This talk aims to provide an understanding of Equivariant graphs and how the speaker is utilizing this property of GNNs in his own work.
                         </p>
                     </td>
                 </tr>
@@ -106,14 +93,40 @@
                 <tr class="spacer" style="height:10px;"></tr>
 
                 <tr class="accordion">
-                    <td>08-02-2024</td>
-                    <td>Tejas Pote</td>
-                    <td>Sparsity in Deep Neural Networks and the Lottery Ticket Hypothesis (<a href="https://arxiv.org/abs/1803.03635" target=”_blank”>paper</a>,&nbsp;<a href="https://arxiv.org/abs/1903.01611v1" target=”_blank”>paper</a>,&nbsp;<a href="https://arxiv.org/abs/2010.03533" target=”_blank”>paper</a>)&nbsp;<a href="Sparsity in Deep Neural Networks and The Lottery.pptx" download>(Download ppt)</a></td>
+                    <td>08-03-2024</td>
+                    <td>Animesh Sachan</td>
+                    <td>An Introduction to Graph Machine Learning - I &nbsp;<a href="Intro to GML Part 1.pptx" download>(Download ppt)</a></td>
                 </tr>
                 <tr class="panel">
                     <td colspan="4">
                         <p>
-                            <strong>Abstract:</strong> Deep Neural Networks deliver the promise of overwhelming generalization performance over a wide variety of tasks like image classification, language modeling, etc. However, the growing size of the networks poses concerns of increasing computational and storage overheads. Besides, parameter redundancy in modern deep networks is well established given  their overparameterized nature. To this end, a number of pruning techniques are widely employed for training neural networks which drop redundant model parameters based on various criteria and deliver comparable model performance. In this talk, we discuss the Lottery Ticket Hypothesis, which empirically proves the existence of subnetworks (winning tickets) within dense, randomly-initialized, feed-forward networks and outlines a training procedure to arrive at the winning solution by training from scratch. The method is successful in reducing parameter counts by over 90% and as well converging faster than the dense network. The talk shall revolve around an overview of the method along with the experimental details. We also plan to discuss the theoretical aspects of the technique and develop deeper insights on 'what makes the lottery tickets win'.
+                            <strong>Abstract:</strong> Deep learning has revolutionized many machine learning tasks in recent years. Traditional machine learning models predominantly handle data in Euclidean spaces, but the surge in complex, interconnected data types necessitates a paradigm shift towards non-Euclidean domains. This is where graph machine learning emerges as a pivotal innovation, providing robust frameworks for analyzing and interpreting data that inherently exists in the form of graphs or networks. Graph learning proves effective for many tasks, such as classification, link prediction, and matching. Generally, graph learning methods extract relevant features of graphs by taking advantage of machine learning algorithms. This talk aims to demystify the prominent architectures within graph machine learning, its wide-ranging applications, and the methodologies for employing Graph Neural Networks (GNNs) to address specific problems.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="accordion">
+                    <td>29-02-2024</td>
+                    <td>Ashraf Haroon Rashid</td>
+                    <td>SSEnse: Stochastic Method For Discovering Sparse Ensembles of Machine Learning Models&nbsp;<a href="Ensembles_references.pdf" download>(Download References)</a></td>
+                </tr>
+                <tr class="panel">
+                    <td colspan="4">
+                        <p>
+                            <strong>Abstract:</strong> Ensemble learning has proven to be highly efficient in producing robust learners. Modern ensemble learning methods can be computationally cumbersome during training and inference due to the presence of large number of individual machine learning (ML) or deep learning (DL) models. To this end, many different techniques have been proposed to reduce computational overhead during the practical implementation of such large ensemble models. These techniques belong to the broad domain of Static Ensemble Selection (SES) or Ensemble Pruning in which a sparser subset of models is chosen as a
+                            representative ensemble. The SES techniques produce a sparse ensemble by using specially designed algorithms and objective functions for a specific metric like classification accuracy or prediction diversity.
+                            These techniques sometimes also make specific hard assumptions on other properties of the objectives
+                            like smoothness and convexity. However, with the advent of modern AI into myriad domains, numerous
+                            other metrics like Fairness, Precision, Confidence, Trustworthiness etc. continue to emerge. As a result,
+                            there is a need for these metrics to be taken into consideration while selecting a subset of models from
+                            the ensemble. The existing SES techniques also ignore several aspects that may be important to the
+                            user while selecting a subset like the computational budget, the tolerance for performance degradation
+                            and the amount of required sparsity. In this work, we propose Sparse Stochastic Ensembles (SSEnse),
+                            a framework that obtains a sparser ensemble while being sensitive to the aforementioned user settings.
+                            SSEnse is a generic framework that uses a novel Stochastic Process (SP) to select a sparser subset while
+                            optimizing any metric of choice given by the user, as long as the metric lies in the interval [0, 1], without
+                            any restrictions on designing special objective function or hard assumptions on smoothness, convexity
+                            or other such properties of the given metric.
                         </p>
                     </td>
                 </tr>
@@ -163,27 +176,14 @@
                 </tr>
 
                 <tr class="accordion">
-                    <td>29-02-2024</td>
-                    <td>Ashraf Haroon Rashid</td>
-                    <td>SSEnse: Stochastic Method For Discovering Sparse Ensembles of Machine Learning Models&nbsp;<a href="Ensembles_references.pdf" download>(Download References)</a></td>
+                    <td>08-02-2024</td>
+                    <td>Tejas Pote</td>
+                    <td>Sparsity in Deep Neural Networks and the Lottery Ticket Hypothesis (<a href="https://arxiv.org/abs/1803.03635" target=”_blank”>paper</a>,&nbsp;<a href="https://arxiv.org/abs/1903.01611v1" target=”_blank”>paper</a>,&nbsp;<a href="https://arxiv.org/abs/2010.03533" target=”_blank”>paper</a>)&nbsp;<a href="Sparsity in Deep Neural Networks and The Lottery.pptx" download>(Download ppt)</a></td>
                 </tr>
                 <tr class="panel">
                     <td colspan="4">
                         <p>
-                            <strong>Abstract:</strong> Ensemble learning has proven to be highly efficient in producing robust learners. Modern ensemble learning methods can be computationally cumbersome during training and inference due to the presence of large number of individual machine learning (ML) or deep learning (DL) models. To this end, many different techniques have been proposed to reduce computational overhead during the practical implementation of such large ensemble models. These techniques belong to the broad domain of Static Ensemble Selection (SES) or Ensemble Pruning in which a sparser subset of models is chosen as a
-                            representative ensemble. The SES techniques produce a sparse ensemble by using specially designed algorithms and objective functions for a specific metric like classification accuracy or prediction diversity.
-                            These techniques sometimes also make specific hard assumptions on other properties of the objectives
-                            like smoothness and convexity. However, with the advent of modern AI into myriad domains, numerous
-                            other metrics like Fairness, Precision, Confidence, Trustworthiness etc. continue to emerge. As a result,
-                            there is a need for these metrics to be taken into consideration while selecting a subset of models from
-                            the ensemble. The existing SES techniques also ignore several aspects that may be important to the
-                            user while selecting a subset like the computational budget, the tolerance for performance degradation
-                            and the amount of required sparsity. In this work, we propose Sparse Stochastic Ensembles (SSEnse),
-                            a framework that obtains a sparser ensemble while being sensitive to the aforementioned user settings.
-                            SSEnse is a generic framework that uses a novel Stochastic Process (SP) to select a sparser subset while
-                            optimizing any metric of choice given by the user, as long as the metric lies in the interval [0, 1], without
-                            any restrictions on designing special objective function or hard assumptions on smoothness, convexity
-                            or other such properties of the given metric.
+                            <strong>Abstract:</strong> Deep Neural Networks deliver the promise of overwhelming generalization performance over a wide variety of tasks like image classification, language modeling, etc. However, the growing size of the networks poses concerns of increasing computational and storage overheads. Besides, parameter redundancy in modern deep networks is well established given  their overparameterized nature. To this end, a number of pruning techniques are widely employed for training neural networks which drop redundant model parameters based on various criteria and deliver comparable model performance. In this talk, we discuss the Lottery Ticket Hypothesis, which empirically proves the existence of subnetworks (winning tickets) within dense, randomly-initialized, feed-forward networks and outlines a training procedure to arrive at the winning solution by training from scratch. The method is successful in reducing parameter counts by over 90% and as well converging faster than the dense network. The talk shall revolve around an overview of the method along with the experimental details. We also plan to discuss the theoretical aspects of the technique and develop deeper insights on 'what makes the lottery tickets win'.
                         </p>
                     </td>
                 </tr>
