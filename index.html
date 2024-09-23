@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
     <?php header('Access-Control-Allow-Origin: *'); ?>
-    <title>Center of Excellence in AI Paper Reading Sessions</title>
+    <!-- <title>Center of Excellence in AI Paper Reading Sessions</title> -->
+     <title>Paper Analysis and Discussion in AI at the Department of Artificial Intelligence</title>
     <style>
         @font-face {
             font-family: 'Open Sans';
@@ -29,9 +30,9 @@
         <!-- <div id="nav-bar"></div> -->
         <div id="bold-text">
             <img id="iitlogo" src="iitlogo.png" alt="IIT Logo">
-            <h1>CAIPRS</h1><br>
+            <h1>PANDA</h1><br>
             <!-- <div id="iitlogo"></div> -->
-            <h2><strong>C</strong>entre of <strong>AI</strong> <strong>P</strong>aper <strong>R</strong>eading <strong>S</strong>essions</h2>
+            <h2>Paper Analysis and Discussion in AI at the Department of Artificial Intelligence</h2>
         </div>
         <div id="sub-container">
             <p>
@@ -46,6 +47,20 @@
                     <th style="text-align: center">Topic</th>
                 </tr>
                 <tr class="spacer" style="height:10px;"></tr>
+                <tr class="accordion">
+                    <td>25-09-2024</td>
+                    <td>Aman Kumar Singh</td>
+                    <td>Human activity imitation by a robotic manipulator in the ROS environment by using YOLO and DBSCAN</td>
+                </tr>
+                <tr class="panel">
+                    <td colspan="4">
+                        <p>
+                            <strong>Abstract:</strong> Modern automation increasingly relies on robots capable of precise and flexible manipulation in unknown environments. This work presents a collaborative pick-and-place system using the Mycobot 280 Jetson manipulator integrated with ROS MoveIt, designed for complex object handling using vision.<br><br>
+                            The system utilizes ROS MoveIt for motion planning, collision avoidance, and kinematics computation to control the manipulator. Stereo vision with dual RGB cameras generates point clouds, enabling YOLOv8 to perform real-time object detection. DBSCAN clustering localizes objects in 3D space, providing coordinates for manipulation.<br><br>
+                            The manipulator operates through ROS scripts to execute pick-and-place tasks, with real-time tracking feedback allowing adjustments during operation. The system includes human activity imitation by analyzing video input to replicate human-object interactions, such as placing objects into bins or handing them to users. This approach demonstrates the integration of motion planning, vision-based perception, and control using ROS MoveIt for robotic systems.
+                        </p>
+                    </td>
+                </tr>
             </table>
 
             <p style="margin-top:60px">
